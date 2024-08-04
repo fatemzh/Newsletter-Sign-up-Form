@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --darkGrayishBlue: hsl(217, 19%, 35%);
+  --darkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(30, 10%, 34%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+  --primary-color: var(--eggshell);
+  --font-family: 'Manrope', sans-serif;
+  --font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  margin: 4rem 2rem;
+  height: 100vh;
+  background-color: var(--lightGrayishBlue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 1rem;
+  max-width: 374px;
+  margin: auto auto;
+  padding: 0;
+}
+
+
+@media (min-width: 1440px) {
+}
