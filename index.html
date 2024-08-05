@@ -33,14 +33,22 @@
             And much more!
           </li>
         </ul>
-        <form id="signup-form" action="post">
-          <label for="email">Email address</label>
+        <form id="signup-form" method="post" action="#">
+          <div id="indication">
+            <label for="email">Email address</label>
+
+            <span id="error-message" class="error-message"
+              >Valid email required.</span
+            >
+          </div>
           <input
             type="email"
             name="email-address"
             id="email-address"
-            aria-required="true"
             placeholder="email@company.com"
+            required
+            autocomplete="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
           <button type="submit" id="submit-btn">
             Subscribe to monthly newsletter

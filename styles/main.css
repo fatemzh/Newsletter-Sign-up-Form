@@ -110,6 +110,17 @@ button#submit-btn {
   font-weight: 500;
 }
 
+#indication {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#indication span {
+  font-size: 12px;
+  color: red;
+}
+
 @media (min-width: 1440px) {
   #upper-container, #confirmation.confirmation {
     display: none;
@@ -146,9 +157,9 @@ button#submit-btn {
   #lower-container h1 {
     margin-top: 3rem;
   }
-  #lower-container p,
+  #indication p, #indication span,
   ul li {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
