@@ -35,6 +35,10 @@ main {
   padding: 0;
 }
 
+#image-desktop, #confirmation{
+  display: none;
+}
+
 section#upper-container {
   margin: 0;
   padding: 0;
@@ -107,6 +111,9 @@ button#submit-btn {
 }
 
 @media (min-width: 1440px) {
+  #upper-container, #confirmation.confirmation{
+    display: none;
+  }
   body {
     display: flex;
     justify-content: center;
