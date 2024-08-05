@@ -129,6 +129,9 @@ button#submit-btn {
     padding: 1rem;
     overflow: hidden;
   }
+  #image-desktop {
+    display: flex;
+  }
   #image-desktop img#image {
     min-height: 100%;
     object-fit: cover;
