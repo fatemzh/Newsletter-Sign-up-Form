@@ -101,6 +101,10 @@ section#upper-container img {
   text-align: center;
   border-radius: 0.5rem;
   font-weight: 500;
+  cursor: pointer;
+}
+#signup-form button#submit-btn:hover {
+  background-color: rgb(79, 8, 98);
 }
 
 #indication {
@@ -149,6 +153,9 @@ section#upper-container img {
     border-radius: 0.5rem;
     font-weight: 500;
     cursor: pointer;
+  }
+  #confirmation #lower-part-confirmation button:hover {
+    background-color: rgb(79, 8, 98);
   }
   body {
     display: flex;
