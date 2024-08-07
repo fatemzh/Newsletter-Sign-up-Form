@@ -101,10 +101,6 @@ section#upper-container img {
   text-align: center;
   border-radius: 0.5rem;
   font-weight: 500;
-  cursor: pointer;
-}
-#signup-form button#submit-btn:hover {
-  background-color: rgb(79, 8, 98);
 }
 
 #indication {
@@ -117,45 +113,42 @@ section#upper-container img {
   color: red;
 }
 
+#confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+}
+#confirmation h1 {
+  font-size: 40px;
+}
+#confirmation #upper-part-confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+}
+#confirmation #upper-part-confirmation img {
+  width: 50px;
+}
+#confirmation #upper-part-confirmation span {
+  font-weight: bold;
+}
+#confirmation #lower-part-confirmation button {
+  background-color: var(--darkSlateGray);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
 @media (min-width: 1440px) {
   #upper-container,
   #confirmation.confirmation {
     display: none;
-  }
-  #confirmation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 500px;
-    width: 500px;
-    padding: 30px;
-  }
-  #confirmation h1 {
-    font-size: 40px;
-  }
-  #confirmation #upper-part-confirmation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 300px;
-  }
-  #confirmation #upper-part-confirmation img {
-    width: 50px;
-  }
-  #confirmation #upper-part-confirmation span {
-    font-weight: bold;
-  }
-  #confirmation #lower-part-confirmation button {
-    background-color: var(--darkSlateGray);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  #confirmation #lower-part-confirmation button:hover {
-    background-color: rgb(79, 8, 98);
   }
   body {
     display: flex;

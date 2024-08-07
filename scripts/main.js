@@ -15,15 +15,15 @@ submit.addEventListener("click", (e) => {
   if (email.value === "" || !email.validity.valid) {
     errMessage.style.display = "block";
   } else {
+    upperContainer.style.display = "none";
     lowerContainer.style.display = "none";
-    imageDesktop.style.display = "none";
     confirmation.style.display = "flex";
   }
 });
 
 dismissBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    confirmation.style.display="none";
-    lowerContainer.style.display="flex";
-    imageDesktop.style.display="flex";
-})
+  e.preventDefault();
+  confirmation.style.display = "none";
+  upperContainer.style.display = "flex";
+  lowerContainer.style.display = "flex";
+});
