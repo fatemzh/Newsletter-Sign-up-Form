@@ -8,7 +8,7 @@ const imageDesktop = document.getElementById("image-desktop");
 const confirmation = document.getElementById("confirmation");
 
 errMessage.style.display = "none";
-
+upperContainer.style.display = "none";
 submit.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -28,7 +28,7 @@ dismissBtn.addEventListener("click", (e) => {
   lowerContainer.style.display = "flex";
 });
 
-if(window.innerWidth<=1440){
+if (window.innerWidth <= 1440) {
   confirmation.style.display = "none";
   upperContainer.style.display = "flex";
 
