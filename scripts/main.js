@@ -8,18 +8,18 @@ const form = document.getElementById("signup-form");
 
 errMessage.style.display = "none";
 confirmation.style.display = "none";
-upperContainer.style.display = "none"; 
+upperContainer.style.display = "none";
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  
+
   if (email.value === "" || !email.validity.valid) {
     errMessage.style.display = "block";
   } else {
     errMessage.style.display = "none";
-    
+
     const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries()); 
+    const data = Object.fromEntries(formData.entries());
 
     console.log(data);
 
@@ -28,7 +28,7 @@ const handleSubmit = (e) => {
     lowerContainer.style.display = "none";
     confirmation.style.display = "flex";
   }
-}
+};
 
 form.addEventListener("submit", handleSubmit);
 
@@ -39,10 +39,9 @@ dismissBtn.addEventListener("click", (e) => {
   lowerContainer.style.display = "flex";
 
   if (window.innerWidth <= 1440) {
-    upperContainer.style.display ="flex";
+    upperContainer.style.display = "flex";
   }
-  });
-
+});
 
 if (window.innerWidth <= 1440) {
   confirmation.style.display = "none";
