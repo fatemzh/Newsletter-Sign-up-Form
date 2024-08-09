@@ -24,6 +24,6 @@ submit.addEventListener("click", (e) => {
 dismissBtn.addEventListener("click", (e) => {
   e.preventDefault();
   confirmation.style.display = "none";
-  upperContainer.style.display = "flex";
+  upperContainer.style.display = "none";
   lowerContainer.style.display = "flex";
 });

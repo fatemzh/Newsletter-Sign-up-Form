@@ -108,6 +108,11 @@ section#upper-container {
     text-align: center;
     border-radius: 0.5rem;
     font-weight: 500;
+    cursor: pointer;
+  }
+
+  button#submit-btn:hover {
+    background-color: rgb(0, 0, 142);
   }
 }
 
@@ -156,6 +161,7 @@ section#upper-container {
     text-align: center;
     border-radius: 0.5rem;
     font-weight: 500;
+    cursor: pointer;
   }
 }
 
