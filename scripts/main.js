@@ -27,3 +27,14 @@ dismissBtn.addEventListener("click", (e) => {
   upperContainer.style.display = "none";
   lowerContainer.style.display = "flex";
 });
+
+if(window.innerWidth<=1440){
+  confirmation.style.display = "none";
+  upperContainer.style.display = "flex";
+
+  dismissBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    confirmation.style.display = "none";
+    upperContainer.style.display = "flex";
+  });
+}
