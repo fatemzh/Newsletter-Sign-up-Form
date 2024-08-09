@@ -33,7 +33,7 @@
             And much more!
           </li>
         </ul>
-        <form id="signup-form" method="post" action="#">
+        <form id="signup-form" novalidate>
           <div id="indication">
             <label for="email">Email address</label>
             <span id="error-message" class="error-message"
@@ -46,7 +46,7 @@
             id="email-address"
             placeholder="email@company.com"
             autocomplete="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
             required
           />
           <button type="submit" id="submit-btn">
