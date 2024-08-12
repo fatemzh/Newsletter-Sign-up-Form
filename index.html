@@ -14,9 +14,9 @@
   </head>
   <body>
     <main id="container" class="container" role="main">
-      <section id="upper-container">
+      <div id="upper-container">
         <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
-      </section>
+      </div>
       <section id="lower-container">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -34,7 +34,7 @@
             And much more!
           </li>
         </ul>
-        <form id="signup-form" novalidate>
+        <form id="signup-form" novalidate role="alert" aria-live="polite">
           <div id="indication">
             <label for="email">Email address</label>
             <span id="error-message" class="error-message"
